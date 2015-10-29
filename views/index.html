@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="brewApp">
+<head>
+    <meta charset="utf-8" />
+    <title> המרכז לבירה ביתית </title>
+
+    <!-- Vendors -->
+    <script src="javascripts/core/jquery-2.1.4.js"></script>
+    <script src="javascripts/core/angular.js"></script>
+    <script src="javascripts/core/angular-route.min.js"></script>
+    <script src="javascripts/core/angular-touch.js"></script>
+    <script src="javascripts/vendors/ngGallery.js"></script>
+    <script src="javascripts/vendors/ui-bootstrap-tpls-0.13.3.min.js"></script>
+
+
+    <!-- Angular -->
+    <script src="javascripts/angular/master.js"></script>
+    <script src="javascripts/angular/routing.js"></script>
+    <script src="javascripts/angular/directives.js"></script>
+    <script src="javascripts/angular/controllers.js"></script>
+
+    <!-- Controllers -->
+    <!-- Stylesheets -->
+    <link href="stylesheets/style.css" rel="stylesheet" />
+    <link href="stylesheets/bootstrap.css" rel="stylesheet" />
+    <link href="stylesheets/bootstrap-theme.css" rel="stylesheet" />
+    <link href="stylesheets/font-awesome.css" rel="stylesheet" />
+    <link href="stylesheets/vendors/ngGallery.css" rel="stylesheet" />
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+
+</head>
+<body ng-controller="BrewMasterCntrl" ng-cloak dir="rtl">
+    <brewery-header> </brewery-header>
+    <div id="wrapper" class="center">
+
+        <ng-view>  </ng-view>
+
+    </div>
+
+</body>
+</html>

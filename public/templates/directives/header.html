@@ -1,0 +1,57 @@
+﻿<div class="header_wrapper">
+    <div class="header_left_mobile">
+        <div class="relative">
+            <div class="mobile_menu" ng-click="toggleMenu()"> <i class="fa fa-bars"></i> </div>
+        </div>
+        <div class="logo block"> </div>
+        <div class="nav block">
+            <ul class="block">
+                <li class="social">
+                    <span>
+                        <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                    </span>
+                </li>
+                <li class="social">
+                    <span>
+                        <a href="http://facebook.com" target="_blank"><i class="fa fa-youtube"></i></a>
+                    </span>
+                </li>
+                <li class="links block" ng-repeat="link in nav.links">
+                    <span> {{link.title}} </span>
+                </li>
+
+            </ul>
+        </div>
+        <div class="address_wrapper">
+            <span class="block center catalog"> <a href="http://www.homebrewing.co.il/AllSites/1482/Assets/hbcatalog.pdf"> הורד את הקטלוג </a> </span>
+            <span class="block center address"> כתובתינו: המצודה 18, אזור </span>
+        </div>
+        <div class="clear"> </div>
+    </div>
+    <div class="header_center">
+        <div class="logo left"> </div>
+        <div class="nav left">
+            <ul class="right">
+                <li class="social">
+                    <span>
+                        <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                    </span>
+                </li>
+                <li class="social">
+                    <span>
+                        <a href="http://facebook.com" target="_blank"><i class="fa fa-youtube"></i></a>
+                    </span>
+                </li>
+                <li class="links" ng-repeat="link in nav.links">
+                    <span> {{link.title}} </span>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="clear"> </div>
+    </div>
+    <div class="web address_wrapper">
+        <span class="block center catalog"> <a href="http://www.homebrewing.co.il/AllSites/1482/Assets/hbcatalog.pdf"> הורד את הקטלוג </a> </span>
+        <span class="block center address"> כתובתינו: המצודה 18, אזור </span>
+    </div>
+</div>

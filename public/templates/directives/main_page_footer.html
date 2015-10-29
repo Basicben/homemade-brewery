@@ -1,0 +1,49 @@
+﻿<div class="main_page_footer_wrapper">
+    <div class="w80p h100p center">
+        <div class="left footer_section">
+            <span class="block title"> {{first.location.breweryName}} </span>
+            <span class="block"> {{first.location.address}} </span>
+            <div class="margtop10">
+                <span class="block">
+                    צור עימנו קשר:
+                    <span>( {{first.contact.phone}} )</span>
+
+
+                </span>
+                <span class="block">
+                    אימייל:
+                    <span>{{first.contact.email}}</span>
+
+                </span>
+            </div>
+            <div class="margtop10">
+                <span>
+                    <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                </span>
+                <span>
+                    <a href="http://facebook.com" target="_blank"><i class="fa fa-youtube"></i></a>
+                </span>
+            </div>
+            <div class="block margtop10">
+                <span>© כל הזכויות שמורות למרכז לבירה ביתית 2015 </span>
+            </div>
+        </div>
+
+        <div class="left footer_section">
+            <span class="title block"> שעות עבודה </span>
+            <div class="block open_hours" ng-repeat="oh in openningHours">
+
+                <span class="right">{{oh.day}}</span>
+                <span class="middle"></span>
+                <span class="left">{{oh.time}}</span>
+                <div class="clear"> </div>
+            </div>
+        </div>
+        <div class="left footer_section">
+            <span class="title block"> תמונות </span>
+            <ng-gallery images="images"></ng-gallery>
+        </div>
+        <div class="clear"> </div>
+    </div>
+
+</div>

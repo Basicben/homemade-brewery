@@ -1,0 +1,89 @@
+﻿
+
+<brewery-header-carousel> </brewery-header-carousel>
+<div class="main_wrapper">
+
+    <div class="center w90p paddtop35 paddbottom35">
+        <div class="links_wrapper">
+            <div class="rectangle inline-block center" ng-repeat="link in top_links.slice().reverse()">
+
+                <div class="top_image" ng-style="{'background-image':'url(' + link.img + ')'}">
+
+                </div>
+                <div class="bottom_descritpion">
+                    <div class="line_separator">
+                        <div class="line_separator left">
+                            <span class="right"></span>
+                        </div>
+                        <div class="line_separator left">
+                            <span class="left"></span>
+                        </div>
+                    </div>
+                    <div class="link_title center"> <h2> {{link.title}} </h2> </div>
+                    <div class="description center">
+                        <p>
+                            {{link.description}}
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="content_wrapper">
+            <div class="right">
+                <div class="text">
+                    <p>
+                        אם אתה אוהב ללמוד דברים חדשים , אוהב בירה ולא מפחד לכלכך את הידיים או את רצפת המטבח , תוכל להכין את הבירה הטובה ביותר שטעמת מעודך, אצלך על הכיריים בבית
+                        זה לא ידרוש ממך הרבה כסף או זמן, למעשה החלק הקשה בתהליך הוא לחכות שבוע לסיום התסיסה.
+                        <br />
+                        בישול בירה אינו חייב להיות מורכב ולא דורש ציוד מתוחכם אך מעניק תוצאות טובות , מאפשר להתנסות בבירות בטעמים חדשים ומעניינים שלא ניתן למצוא על המדף וגם מעניק סיפוק ביצירה מעשה ידיך.
+                        בישול בירה הוא תחביב בעל תשוקה, תשוקה של כל בשלן ליצור את כוס הבירה המושלמת, כזאת שתסחוט קריאת התפעלות מכל מי שישתה אותה, בישול בירה הוא תחביב המכיל צד אומנותי, כמו צייר המשתמש בחומרים וצבעים שונים על מנת לייצר מרקם ,ניגודיות ותמונה כך בבישול בירה בשלן מתכנן איך הבירה שלו תיראה, מה יהיה טעמה ומאזן את טעמו המתוק של הלתת עם מרירותה של הכשות.
+                        <br />
+                        גם אם אתה עומד לבשל בירה בפעם הראשונה וצריך סט ציוד מלא לבישול בירה וגם אם אתה בשלן מנוסה שמחפש אחר מבחר גדול של חומרי גלם לבישול בירה, יש לנו את המוצרים הנדרשים עבורך.
+                        במרכז לבירה ביתית. המטרה שלנו להפוך את תחביב בישול הבירה לקל ומהנה כמה שיותר. באתר תמצא מדריכים להכנת בירה, חומר קריאה ומידע מפורט שיעזור לך להפוך לבשלן טוב יותר.
+                    </p>
+                </div>
+            </div>
+            <div class="left">
+
+                <div class="updates">
+                    <div style="top:15px;" class="relative">
+                        <div>
+                            <span> עדכונים </span>
+                        </div>
+
+                        <div class="">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="newsletter">
+
+                    <div style="top:15px;" class="relative">
+                        <div>
+                            <span> הצטרף לרשימת התפוצה </span>
+                        </div>
+
+                        <div class="">
+                            <span class="size12 block">הצטרף לרשימת התפוצה שלנו וקבל הנחות והצעות מיוחדות.</span>
+                            <input ng-model="newsletter.value" type="email" class="form-control w80p relative" placeholder="{{newsletter.placeholder}}" />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+
+        </div>
+
+    </div>
+    <div class="newsletter_wrapper">
+        <div class="newsletter_content block center">
+
+
+        </div>
+    </div>
+
+</div>
+<main-page-footer></main-page-footer>

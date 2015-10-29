@@ -1,0 +1,11 @@
+﻿<div class="header_carousel_wrapper">
+    <carousel id="header_carousel" interval="slidesObj.interval" no-wrap="slidesObj.noWrapSlides">
+        <slide ng-repeat="slide in slidesObj.slides" active="slide.active">
+            <img ng-src="{{slide.imgUrl}}" style="margin:auto;">
+            <div class="carousel-caption">
+                <h4>Slide {{$index}}</h4>
+                <p>{{slide.text}}</p>
+            </div>
+        </slide>
+    </carousel>
+</div>
